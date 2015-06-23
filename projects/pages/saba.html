@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hannah Chen's portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../../css/style.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<script type="text/javascript" src="../../assets/js/jquery-1.9.1.min.js"></script>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+  </head>
+
+  <body class='project_detail'>
+
+  	<div class="container white-bg" id="top">
+
+  		<div class="masthead masthead_project">
+  			<div class="masthead_name">
+  				<a href="../../index.html">Hannah Chen</a>
+  			</div>
+
+  			<ul class="nav hidden-phone hidden-tablet" id="nav">
+  				<li class="active"><a href="../../index.html">about</a></li>
+  				<li><a href="../../index.html#portfolio">portfolio</a></li>
+  				<li><a href="../../index.html#skills">skills</a></li>
+  				<li><a href="../../index.html#contact">contact</a></li>
+  			</ul>
+  		</div>
+
+
+
+  		<!--overview-->
+  		<div class="jumbotron">
+  			<div class="row-fluid">
+  				<div class="span5">
+  					<p class="title-text">Saba Compensation</p>
+  					<p class="lead">More examples of my work and references are available upon request.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+
+        <p class="section-text" id="process">Product Rebranding</p>
+        <div class="row-fluid">
+            <div class="span6">
+                <img src="../Saba/saba.001.png" alt="">
+            </div>
+            <div class="span6">
+                <img src="../Saba/saba.002.png" alt="">
+            </div>
+
+        </div>
+        
+
+  			<div class="footer">
+<!--    <p>
+    <a href="mailto:hannahcdesign@gmail.com" target="_blank"><img src="../../images/social_email.png" class="social-icon"/></a>
+    <a href="http://www.linkedin.com/in/lovelyhengheng" target="_blank"><img src="../../images/social_linkedin.png" class="social-icon"/></a>
+    <a href="http://twitter.com/hannahcdesign" target="_blank"><img src="../../images/social_twitter.png" class="social-icon"/></a>
+    <a href="http://dribbble.com/hannahcdesign" target="_blank"><img src="../../images/social_dribbble.png" class="social-icon"/></a>
+    <a href="http://vimeo.com/user3367128" target="_blank"><img src="../../images/social_vimeo.png" class="social-icon"/></a>
+  </p>
+  
+  <p>
+    <a href="http://www.facebook.com/people/Hannah-Chan/100000190134259" target="_blank"><img src="../../images/social_facebook.png" class="social-icon"/></a>
+    <a href="http://instagram.com/hannahcdesign" target="_blank"><img src="../../images/social_instagram.png" class="social-icon"/></a>
+    <a href="http://www.flickr.com/photos/lovelyhengheng" target="_blank"><img src="../../images/social_flickr.png" class="social-icon"/></a>
+    <a href="http://pinterest.com/lovelyhengheng/" target="_blank"><img src="../../images/social_pinterest.png" class="social-icon"/></a>
+    <a href="https://plus.google.com/u/2/115267599128762833659/posts" target="_blank"><img src="../../images/social_googleplus.png" class="social-icon"/></a>
+  </p> -->
+
+  <p class="text-center">&copy; Hannah Chen 2014 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+</div> <!-- /container -->
+
+<!--  Bootstrap js -->
+<!-- <script src="../../assets/js/jquery.js"></script> -->
+<script src="../../assets/js/bootstrap-scrollspy.js"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+	var navPosition = $('.project_detail #project_content_nav').offset().top;
+	$(window).on('scroll', function() {
+		if($('body').scrollTop() > navPosition) {                
+			$('.project_detail #project_content_nav').css({
+				position: 'fixed',
+				top: 0
+			});
+		} else {
+			$('.project_detail #project_content_nav').css({
+				position: 'static'
+			});
+		}
+	});        
+});
+
+</script>
+
+<script type="text/javascript" src="../../js/pages.js"></script>
+
+</body>
+</html>

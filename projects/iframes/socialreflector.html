@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Social Reflector</title>
+	<link rel="stylesheet" href="../../css/iframe.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="../SocialReflector/swfobject.js"></script>
+</head>
+
+<body>
+	<div id="flashcontent" style="width:215px; height:200px; float:left; margin:0px 30px 0px 0px;">
+	<strong>Please upgrade your Flash Player</strong>
+	This is the content that would be shown if the user does not have Flash Player 6.0.65 or higher installed.
+	</div>
+	<!-- BEGIN EMBED CODE -->
+	
+	<!-- IMPORTANT: Make sure you also copy the swfobject script tag from the head above -->
+	<script type="text/javascript">
+		// <![CDATA[
+		
+		// version 9.0.115 or greater is required for launching AIR apps.
+		var so = new SWFObject("../SocialReflector/AIRInstallBadge.swf", "Badge", "215", "180", "9.0.115", "#FFFFFF");
+		so.useExpressInstall('../SocialReflector/expressinstall.swf');
+		
+		// these parameters are required for badge install:
+		so.addVariable("airversion", "1.0"); // version of AIR runtime required
+		so.addVariable("appname", "Social Reflector"); // application name to display to the user
+		so.addVariable("appurl", "http://www.public.asu.edu/~hchen101/projects/SocialReflector/SocialReflector.air"); // absolute URL (beginning with http or https) of the application ".air" file
+		
+		// these parameters are required to support launching apps from the badge (but optional for install):
+		so.addVariable("appid", "SocialReflector"); // the qualified application ID (ex. com.gskinner.air.MyApplication)
+		so.addVariable("pubid", ""); // publisher id
+		
+		// this parameter is required in addition to the above to support upgrading from the badge:
+		so.addVariable("appversion", "1.0"); // AIR application version
+		
+		// these parameters are optional:
+		so.addVariable("image", "../SocialReflector/SocialReflector.png"); // URL for an image (JPG, PNG, GIF) or SWF to display in the badge (205px wide, 170px high)
+		so.addVariable("appinstallarg", "installed from web"); // passed to the application when it is installed from the badge
+		so.addVariable("applauncharg", "launched from web"); // passed to the application when it is launched from the badge
+		so.addVariable("helpurl", "help.html"); // optional url to a page containing additional help, displayed in the badge's help screen
+		so.addVariable("hidehelp", "true"); // hides the help icon if "true"
+		so.addVariable("skiptransition", "false"); // skips the initial transition if "true"
+		so.addVariable("titlecolor", "#ee3233"); // changes the color of titles
+		so.addVariable("buttonlabelcolor", "#ee3233"); // changes the color of the button label
+		so.addVariable("appnamecolor", "#ee3233"); // changes the color of the application name if the image is not specified or loaded
+		
+		// these parameters allow you to override the default text in the badge:
+		// supported strings: str_error, str_err_params, str_err_airunavailable, str_err_airswf, str_loading, str_install, str_launch, str_upgrade, str_close, str_launching, str_launchingtext, str_installing, str_installingtext, str_tryagain, str_beta3, str_beta3text, str_help, str_helptext
+		so.addVariable("str_err_airswf", "<u>Running locally?</u><br/><br/>The AIR proxy swf won't load properly when this demo is run from the local file system."); // overrides the error text when the AIR proxy swf fails to load
+		
+		so.write("flashcontent");
+		
+		// ]]>
+	</script>
+	
+	<!-- END EMBED CODE -->
+	
+	<p>Much of our daily reflections, communications and commentary appear today integrated as part of our social media network. Services such as Twitter, Facebook and YouTube represent the activities and interpretations of our individual and social life experiences. Considering such activity collections as digital lifestreams, we can detect patterns of significance that are revealed to us through insightful visual summaries. Our Social Reflector provides three dynamic social network visualizations aimed at supporting reflection and the development of insight about online interactions on social network websites. </p>
+		<hr>
+		<h3>Publication</h3>
+		<p>H. Chen, A. Kelliher. Conversational lives: visualizing interpersonal online social interaction, in Proceedings of HCI International. July, 2011.
+		<br><a href="../SocialReflector/hcii2011_chen.pdf">[PDF]</a>
+		    <a href="http://www.springerlink.com/content/wn7164n4v1576v81" target="_blank">[Springer Link]</a>
+		</p>
+		<hr>
+		<img src="../SocialReflector/socialreflector.001.png" width=680>
+		<img src="../SocialReflector/socialreflector.002.png" width=680>
+		<img src="../SocialReflector/socialreflector.003.png" width=680>
+		<img src="../SocialReflector/socialrefletcor.004.png" width=680>
+		<h4>WordCloud: Conversation Potential</h4>
+		<p>The WordCloud interface presents an individuals' Facebook status updates as a weighted 2D list. In this interface, the font size of each status post indicates the number of associated comments (the more comments the larger the font) and the font saturation depicts the number of associated "likes" (the more likes, the more saturated).</p>
+		<img src="../SocialReflector/figure_cloud.png" width=500>
+		<p><b>Fig. 1.</b> Screen shot of the WordCloud interface depicting an individual's Facebook wall posts, likes and comments as a weighted 2D list.</p>
+		
+		<h4>Clock: Activity Rhythms </h4>
+		<p>The Clock interface depicts an individuals' monthly Facebook status posts and received comments in a radial layout. Here, each circle represents a day in the selected month, and posts and comments are represented as icons placed on the circle lines according to their time of posting. The icons are color-coded blue (posts) and orange (comments) to give participants an at-a-glance overview of the ratio between their outward expression and their inward feedback reception. </p>
+		<img src="../SocialReflector/figure_clock.png" width=700>
+		<p><b>Fig. 2.</b> Screen shots of the Clock interface depicting Facebook data from three users. (a) Data depicts significant inward traffic on a user's birth-date; (b) Data indicates regular morning posting by a user; (c) Data indicates little interactive communication from a user's network. </p>
+		
+		<h4>Circles: Interpersonal Communications</h4>
+		<p>The Circles interface allows users to explore the inward and outward flow of communications within their Facebook network. The rings in the visualization depict status updates (inner), comments (middle) and friends (outer) as selectable, inter-related bars.</p>
+		<img src="../SocialReflector/figure_circles.png" width=700>
+		<p><b>Fig. 3.</b> Screen shots of the Circles interface depicting data from three user categories: (a) Low number of friends and low activity volume; (b) Low-medium number of friends and medium activity volume; (c) High number of friends and high activity volume.</p>
+</body>
+</html>
