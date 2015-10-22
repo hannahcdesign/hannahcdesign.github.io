@@ -1,18 +1,24 @@
-	$(function(){
-		$('#Grid').mixitup();
-	});
-
-	$(document).ready(function(){
+$(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+		e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+		var target = this.hash,
+		$target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top-66
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top-50
+		}, 900, 'swing', function () {
+			window.location.hash = target;
+		});
 	});
+});
+
+// MixItUp js for sorting portfolio project list:
+
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#project-list-container').mixItUp();
+
 });
